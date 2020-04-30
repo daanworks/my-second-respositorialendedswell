@@ -1,26 +1,25 @@
-var miles = 900;
-var kilometers = miles * 1.6;
-
-var boo = true;
-var notboo = false;
-
-var cars = ["Saab", "Volvo", "BMW"]; // Array
-
-//Object:
-
-var person = {
-    name: 'DAANWORKS',
-    age: 30,
-    oldEnoughToDrive: true,
-    favouriteCars: cars
+let printNumbersTill = (n) => {
+    for (i=1; i <= n; i++) {
+        console.log(i);
+    }
 }
 
+console.log(printNumbersTill(22));
 
 
+let getGreetingTo = (nev) => {
+    nev = "Hello " + nev;
+    return nev;
+}
 
-$('#add-button').click(() => {
-    $('h1').text('I can overwrite you with jQuery, you little bitch.');
-});
+console.log(getGreetingTo("FUCK YOU"));
 
+let printValues = (array) => {
+    for (i=0; i < array.length; i++)
+    console.log(array[i]);
+}
 
+console.log(printValues([1, 2, 18, 61, 42, 53]));
 
+$('h1').text('MY NYU TAJTL');
+$('button').text('MY NYU TAJTL');
